@@ -10,7 +10,7 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v4
       - name: lint HTML and CSS
-        run: 
+        run: |
           npx htmlhint "**/*.html"
           npx stylelint "**/*.css"
   build-job:
